@@ -1,52 +1,42 @@
 <?php
 echo 'Hello this is a calculator' . PHP_EOL;
+echo 'Insert the number' . PHP_EOL;
+$operationType1 = (int)fgets(STDIN);
+$operationType2 = fgets(STDIN);
+$operationType3 = (int)fgets(STDIN);
+$chislo1 = $operationType1;
+$chislo2 = $operationType3;
+function plus($chislo1, $chislo2)
 {
-    echo 'Insert the number' . PHP_EOL;
+    return $chislo1 + $chislo2;
+}
 
-    $operationType = (int)fgets(STDIN);
-    function plus($chislo1, $chislo2)
-    {
-        return $chislo1 + $chislo2;
-    }
+function minus($chislo1, $chislo2)
+{
+    return $chislo1 - $chislo2;
+}
 
-    function minus($chislo1, $chislo2)
-    {
-        return $chislo1 - $chislo2;
-    }
+function multiplication($chislo1, $chislo2)
+{
+    return $chislo1 * $chislo2;
+}
 
-    function multiplication($chislo1, $chislo2)
-    {
-        return $chislo1 * $chislo2;
-    }
+function division($chislo1, $chislo2)
+{
+    return $chislo1 / $chislo2;
+}
 
-    function division($chislo1, $chislo2)
-    {
-        return $chislo1 / $chislo2;
-    }
+$operationType2 = trim($operationType2);
 
-    if ($operationType === '+') {
-        echo plus($chislo1, $chislo2);
-    } elseif ($operationType === '-') {
-        echo minus($chislo1, $chislo2);
-    } elseif ($operationType === '*') {
-        echo multiplication($chislo1, $chislo2);
-    } elseif ($operationType === '/') {
-        echo division($chislo1, $chislo2);
-    }
-    switch ($operationType) {
-        case 1:
-            echo 'plus($chislo1, $chislo2);
-            break;
-        case 2:
-            echo minus($chislo1, $chislo2);
-            break;
-        case 3:
-           echo 'multiplication($chislo1, $chislo2)
-        break;
-        case 4:
-            echo 'division($chislo1, $chislo2);
-        break;
-    }
+
+if ($operationType2 === '+') {
+    echo plus($chislo1, $chislo2);
+} elseif ($operationType2 === '-') {
+    echo minus($chislo1, $chislo2);
+} elseif ($operationType2 === '*') {
+    echo multiplication($chislo1, $chislo2);
+} elseif ($operationType2 === '/') {
+    echo division($chislo1, $chislo2);
 }
 
 
