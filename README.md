@@ -1,1 +1,1 @@
-Kostyan lox pasxalo4ka
+Kostyan lox pasxalo4ka polnii lowara
