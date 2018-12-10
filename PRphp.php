@@ -33,7 +33,18 @@ echo 'Hello this is a calculator' . PHP_EOL;
     } elseif ($operationType === '/') {
         echo division($chislo1, $chislo2);
     }
-    echo $chislo1 || $operationType || $chislo2;
+    switch ($operationType){
+        case 1:
+            echo 'plus';
+            break;
+        case 2:
+            echo 'minus';
+            break;
+        case 3: 'multiplication';
+        break;
+        case 4: 'division';
+        break;
+    }
 }
 
 
