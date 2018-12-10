@@ -4,7 +4,10 @@ echo 'Hello this is a calculator' . PHP_EOL;
     echo 'Insert the number' . PHP_EOL;
 
     $operationType = (int)fgets(STDIN);
-
+    switch ($operationType) {
+        case 1:
+            echo ''
+    }
 
     function plus($chislo1, $chislo2)
     {
